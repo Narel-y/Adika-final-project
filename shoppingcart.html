@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adika.com</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
+<body>
+    <div class="video-background">
+        <video autoplay muted loop id="video-bg">
+            <source src="videos\video1.mp4" type="video/mp4">
+            </video>
+    </div>
+    
+         <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html"></a>
+                <img src="img\logo.png" alt="Adika" class="logo-image"> <!-- Logo Image -->
+            <h1>Adika</h1>
+                <br>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Vehicles</a></li>
+                <li><a href="shoppingcart.html">Reservations</a></li>
+                <li><a href="contactinfo.html">About us</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <style>
+ .reservation-header {
+    background: linear-gradient(to bottom,rgba(0,0,0,0.3), #333);
+    color: goldenrod;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.reservation-header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    text-align: center;
+    color: goldenrod;
+    animation: textGlow 2s infinite alternate; /* Glow animation */
+}
+
+@keyframes textGlow {
+    0% {
+        text-shadow: 0 0 10px #00f6ff, 0 0 20px #00f6ff, 0 0 30px #00aaff, 0 0 40px #0073ff, 0 0 50px #0073ff, 0 0 60px #0073ff, 0 0 70px #00f6ff;
+        color: #ffffff;
+    }
+    50% {
+        text-shadow: 0 0 20px  #00f6ff , 0 0 30px  #00f6ff, 0 0 40px  #00f6ff, 0 0 50px  #00f6ff, 0 0 60px  #00f6ff, 0 0 70px  #00f6ff, 0 0 80px  #00f6ff;
+        color: #f0f0f0;
+    }
+    100% {
+        text-shadow: 0 0 10px #00f6ff, 0 0 20px #00f6ff, 0 0 30px #00aaff, 0 0 40px #0073ff, 0 0 50px #0073ff, 0 0 60px #0073ff, 0 0 70px #00f6ff;
+        color: #ffffff;
+    }
+}
+
+
+.reservation-header p {
+    font-size: 1.2em;
+    text-align:center;
+
+}
+
+/* Reservation Form Container */
+.reservation-form-container {
+    display: flex;
+    justify-content: center;
+    margin: 50px 20px;
+    position: relative;
+}
+
+/* Glowing Form Styling */
+.reservation-form {
+    background: rgba(0,0,0,0.5);
+    padding: 40px;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.2); /* Subtle box shadow */
+    border-radius: 15px;
+    max-width: 600px;
+    width: 100%;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+}
+
+/* Add Glowing Effect to Entire Container */
+.reservation-form:after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    border-radius: 15px;
+    background: linear-gradient(
+        135deg,
+        rgba(0, 255, 255, 0.4),
+        rgba(0, 123, 255, 0.6),
+        rgba(0, 123, 255, 0.2),
+        rgba(0, 255, 255, 0.4)
+    );
+    box-shadow: 0 0 60px rgba(0, 123, 255, 0.6), 0 0 20px rgba(0, 255, 255, 0.2);
+    filter: blur(30px);
+    opacity: 0.5; /* Default glow intensity */
+    z-index: -1;
+    transition: all 0.6s ease-in-out;
+}
+
+/* Enhance Glow on Hover */
+.reservation-form:hover:after {
+    opacity: 1; /* Increase glow intensity */
+    transform: scale(1.05); /* Slight scale for effect */
+}
+
+/* Form Section Styling */
+.form-section {
+    margin-bottom: 20px;
+}
+
+.form-section label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.form-section input, 
+.form-section select {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid coral;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+input:focus, select:focus {
+    border-color: rgba(0, 123, 255, 0.6);
+    outline: none;
+}
+
+/* Glow Effect for Submit Button */
+.reserve-button {
+    background: linear-gradient(90deg, #0073e6, #00c1ff);
+    color: #fff;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    width: 100%;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 15px rgba(0, 123, 255, 0.5);
+}
+
+.reserve-button:hover {
+    background: linear-gradient(90deg, #005bb5, #00a3d1);
+    box-shadow: 0 0 30px rgba(0, 123, 255, 0.7); /* Intense glow effect on hover */
+}
+    </style>
+
+   
+    </header>
+    <section class="reservation-header"></header>
+        <h1>Reserve Your Ride</h1>
+        <p>Choose your preferred vehicle and schedule your journey with ease.</p>
+
+    <div class="reservation-form-container">
+        <form class="reservation-form">
+            <!-- Choose a Category Section -->
+            <div class="form-section">
+                <label for="category">Choose a Category</label>
+                <select id="category" name="category" required>
+                    <option value="">Select a Category</option>
+                    <option value="Executive Sedan">Executive Sedan</option>
+                    <option value="Luxury Limousine">Luxury Limousine</option>
+                    <option value="SUV">SUV</option>
+                </select>
+            </div>
+
+            <!-- Select Your Vehicle Section -->
+            <div class="form-section">
+                <label for="vehicle">Select Your Vehicle</label>
+                <select id="vehicle" name="vehicle" required>
+                    <option value="">Select a Vehicle</option>
+                    <!-- Options will be dynamically populated based on selected category -->
+                </select>
+            </div>
+
+            <!-- Location Section -->
+            <div class="form-section">
+                <label for="pickup-location">Pick-up Location</label>
+                <input type="text" id="pickup-location" name="pickup-location" placeholder="Enter pick-up location" required>
+            </div>
+            <div class="form-section">
+                <label for="dropoff-location">Drop-off Location</label>
+                <input type="text" id="dropoff-location" name="dropoff-location" placeholder="Enter drop-off location" required>
+            </div>
+
+            <!-- User Information Section -->
+            <div class="form-section">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-section">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-section">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+            </div>
+
+            <!-- Date Section -->
+            <div class="form-section">
+                <label for="pickup-date">Pick-up Date</label>
+                <input type="date" id="pickup-date" name="pickup-date" required>
+            </div>
+            <div class="form-section">
+                <label for="return-date">Return Date</label>
+                <input type="date" id="return-date" name="return-date" required>
+            </div>
+
+            <a href="checkout.html">
+                <button type="button" class="reserve-button">Reserve Now</button>
+            </a>
+            
+        </form>
+    </div>
+    </section>
+    <script src="script.js"></script>
+<script>
+    function goToCheckout() {
+        // Get form data from the existing fields on your reservation page
+        const carType = document.getElementById('car-type').value;
+        const rentalDays = document.getElementById('rental-days').value;
+    
+        if (carType && rentalDays) {
+            // Redirect to the checkout page with parameters
+            window.location.href = `checkout.html?carType=${carType}&days=${rentalDays}`;
+        } else {
+            alert("Please select a car type and enter the number of days.");
+        }
+    }
+
+    
+// Retrieve URL parameters
+const urlParams = new URLSearchParams(window.location.search);
+const carType = urlParams.get('carType');
+const category = urlParams.get('category');
+
+// Display the selected car and category
+if (carType && category) {
+    document.getElementById('selected-car').innerText = `${category} - ${carType}`;
+}
+
+    </script>
+</body>
+</html>

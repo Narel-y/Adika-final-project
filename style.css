@@ -1,0 +1,786 @@
+/* Base Styles for All Elements */
+body, h1, h2, h3, p, ul, li, a, button, form, input {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 1068px)
+{.typography-ps-intro-semibold {
+      font-size: 17px;
+      line-height: 1.4705882353;
+      font-weight: 600;
+      letter-spacing: -0.022em;
+      font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    }
+}
+
+body, button, input, select, textarea {
+    font-synthesis: none;
+    -moz-font-feature-setting: "kern";
+  }
+
+  element {
+    --r-localnav-text-zoom-factor: 1;
+    --global-scrollbar-width: -1px;
+  }
+
+  :root {
+    --sk-footnote-reduced-font-size: 0.45em;
+    --sk-footnote-reduced-offset-top: -0.86em;
+  }
+
+  :root {
+    --sk-body-font-stack: text;
+  --sk-default-stacked-margin: 0.4em;
+  --sk-paragraph-plus-element-margin: 0.8em;
+  --sk-headline-plus-first-element-margin: 0.8em;
+  --sk-headline-plus-headline-margin: 0.4em;
+  --sk-paragraph-plus-headline-margin: 1.6em;
+}
+
+/* Use the font throughout the project */
+body, h1, h2, p {
+    font-family: 'SF-Pro', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth; /* Smooth scrolling for a better experience */
+}
+
+/* Global Background Color */
+body {
+    background-color: rgba(0,0,0,0.5); /* Soft grey for overall background */
+}
+
+.glow-text {
+    font-size: 200px;                /* Large font size */
+    color: #fff;                     /* Base color */
+    text-shadow: 0 0 20px #0ff,      /* First layer of shadow */
+                 0 0 30px #0ff,      /* Second layer of shadow */
+                 0 0 40px #0ff,      /* Third layer of shadow */
+                 0 0 50px #0ff,      /* Fourth layer of shadow */
+                 0 0 60px #0ff;      /* Fifth layer of shadow */
+    animation: glow 1.5s ease-in-out infinite alternate; /* Smooth animation */
+}
+
+/* Animation for pulsing glow effect */
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 20px #0ff,
+                     0 0 30px #0ff,
+                     0 0 40px #0ff,
+                     0 0 50px #0ff,
+                     0 0 60px #0ff;
+    }
+    100% {
+        text-shadow: 0 0 30px #0ff,
+                     0 0 40px #0ff,
+                     0 0 50px #0ff,
+                     0 0 60px #0ff,
+                     0 0 70px #0ff;
+    }
+}
+
+.element {
+    font-weight: bold;
+    color: #ffdd59; /* Change color to match your theme */
+    text-shadow: 0 0 10px rgba(255, 221, 89, 0.8), 0 0 20px rgba(255, 221, 89, 0.6), 0 0 30px rgba(255, 221, 89, 0.4);
+    transition: text-shadow 0.3s ease-in-out;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    }
+
+/* Container for Centering Content */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    width: 110px; /* Set the width of the logo */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 1rem; /* Space between the logo and text */
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #333; /* Dark background for navigation */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.logo h1 {
+    color: goldenrod;
+    font-size: 2rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li {
+    margin: 0 1.5rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: #ff7a59; /* Orange hover effect */
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 90vh;
+    background: url('luxury-car.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:goldenrod; /* Use white text for better contrast */
+    text-align: center;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2); /* Dark overlay for text visibility */
+}
+
+.reg-text {
+    position: relative;
+    height: 90vh;
+    background: url('luxury-car.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:rgb(225, 223, 217); /* Use white text for better contrast */
+    text-align: center;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2); /* Dark overlay for text visibility */
+}
+
+.intro-text {
+    text-align: center;
+    margin: 2rem auto;
+    padding: 2rem 3rem;
+    max-width: 800px; /* Control the width of the paragraph */
+    color: #fff;
+    background: linear-gradient(135deg, #1e1e1e, #2b2b2b); /* Dark gradient background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+/* Paragraph Text Styling */
+.intro-text p {
+    font-size: 1.3rem; /* Increase font size */
+    line-height: 1.7; /* Add line height for readability */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4); /* Subtle text shadow for depth */
+    transition: color 0.3s ease-in-out;
+    text-align:center
+
+}
+
+/* Glow Effect for Certain Words */
+.glow {
+    color: #ffdd59;
+    text-shadow: 0 0 10px rgba(255, 221, 89, 0.8), 0 0 20px rgba(255, 221, 89, 0.6), 0 0 30px rgba(255, 221, 89, 0.4);
+    font-weight: bold;
+    transition: text-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.glow:hover {
+    text-shadow: 0 0 20px rgba(255, 221, 89, 1), 0 0 40px rgba(255, 221, 89, 0.8), 0 0 60px rgba(255, 221, 89, 0.6);
+    transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+/* Highlight Effect for Company Name */
+.highlight {
+    color: #ff7a59;
+    text-shadow: 0 0 15px rgba(255, 122, 89, 0.8), 0 0 30px rgba(255, 122, 89, 0.6);
+    font-weight: bold;
+}
+
+.highlight:hover {
+    color: #ff6b39;
+    text-shadow: 0 0 30px rgba(255, 122, 89, 1), 0 0 60px rgba(255, 122, 89, 0.8);
+}
+
+/* Adding a Glowing Border Animation */
+.intro-text::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border-radius: 12px;
+    background: linear-gradient(45deg, #ff7a59, #ffdd59, #1ec1ff, #ff0076, #ff7a59);
+    background-size: 300% 300%;
+    z-index: -1; /* Place behind the paragraph */
+    animation: glowing-border 5s linear infinite;
+}
+
+/* Keyframes for Glowing Border Animation */
+@keyframes glowing-border {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.horizontal-scroll {
+    position: relative;
+    height: 100vh; /* Full height section */
+    overflow: hidden; /* Hide overflow for a clean look */
+    display: flex;
+    align-items: center; /* Center items vertically */
+    background: rgba(0, 0, 0, 0.3); /* Background color for contrast */
+}
+
+.scroll-container {
+    display: flex; /* Use flexbox for horizontal alignment */
+    flex-wrap: nowrap; /* Prevent wrapping to the next line */
+    overflow-x: scroll; /* Enable horizontal scrolling */
+    scroll-snap-type: x mandatory; /* Snap to each item */
+    height: 70vh; /* Adjust the height as needed */
+    margin-left: 10%; /* Center the gallery */
+}
+
+.scroll-item {
+    flex: 0 0 auto; /* Prevent shrinking or growing */
+    width: 30%; /* Set width of each item */
+    margin-right: 2rem; /* Spacing between items */
+    scroll-snap-align: start; /* Snap effect */
+    position: relative;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Optional Hover Effects */
+.scroll-item:hover {
+    transform: scale(1.05); /* Slight zoom-in */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Add shadow */
+}
+
+.scroll-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Smooth Scrolling for the Scroll Container */
+.scroll-container {
+    scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar Styles */
+.scroll-container::-webkit-scrollbar {
+    height: 10px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.3); /* Dark scrollbar */
+    border-radius: 10px;
+}
+
+.scroll-section {
+    height: 100vh; /* Full screen height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    flex-direction: column; /* Stack the controls below the gallery */
+}
+
+/* Wrapper to Hold the Sticky Gallery */
+.scroll-wrapper {
+    position: sticky;
+    top: 0; /* Stick to the top of the viewport */
+    width: 100vw; /* Full viewport width */
+    height: 80vh; /* Gallery occupies 80% of the viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Horizontal Scroll Gallery */
+.scroll-gallery {
+    display: flex; /* Use flexbox for horizontal layout */
+    gap: 2rem; /* Space between items */
+    width: 500%; /* Make the container much wider than the viewport */
+    transition: transform 0.5s ease-out; /* Smooth transform effect */
+}
+
+/* Gallery Items */
+.gallery-item {
+    flex: 0 0 auto; /* Prevent shrinking or growing */
+    width: 30vw; /* Set a width relative to the viewport */
+    height: 60vh; /* Set height */
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the entire item area */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+.scroll-controls {
+    position: absolute;
+    bottom: 2rem; /* Place controls at the bottom */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.control-btn {
+    background-color: #ff7a59; /* Button background color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 0 1rem;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.control-btn:hover {
+    background-color: #e64a19; /* Darker hover effect */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .gallery-item {
+        width: 70vw; /* Larger width on smaller screens */
+        height: 50vh; /* Reduce height */
+    }
+
+    .scroll-wrapper {
+        height: 70vh;
+    }
+}
+
+.checkout-background {
+    height: auto;
+    width: auto;
+    background-color: #0073ff;
+    padding: 20px;
+}
+
+.car-list-section {
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .car-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .car-item {
+    width: 250px;
+  }
+  
+  .car-item img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .car-item h3 {
+    margin: 15px 0 5px;
+    font-size: 20px;
+    color: #e64a19;
+  }
+  
+  .car-item p {
+    font-size: 16px;
+    color: white;
+  }
+  
+  .reserve-btn-container {
+    margin-top: 20px;
+  }
+  
+  .reserve-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .reserve-btn:hover {
+    background-color: #555;
+  }
+
+  /* Services Section Styles */
+.services-section {
+    padding: 60px 20px;
+    background-color: rgba(0, 0, 0, 0.4);
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: bisque;
+  }
+  
+  .services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .service-box {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: calc(33.33% - 20px); /* For 3 items per row */
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .service-box:hover {
+    transform: translateY(-5px);
+  }
+  
+  .service-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+  }
+  
+  .service-box h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .service-box p {
+    color: goldenrod;
+  }
+
+  services-section {
+    padding: 60px 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: goldenrod;
+    font-family: 'Helvetica Neue', sans-serif; /* Example font, adjust as needed */
+  }
+  
+  .services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .service-box {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    border: 1px solid;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: calc(30% - 20px); /* For 3 items per row */
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .service-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  }
+  
+  .service-icon {
+    width: 250px;
+    height: 200px;
+    margin-bottom: 20px;
+  }
+  
+  .service-box h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: goldenrod;
+  }
+  
+  .service-box p {
+    color: whitesmoke;
+    font-size: 16px;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 1024px) {
+    .service-box {
+      width: calc(45% - 20px); /* For 2 items per row on tablets */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .service-box {
+      width: 100%; /* For 1 item per row on mobile */
+    }
+  }
+ 
+
+.hero-text h2 {
+    font-size: 4rem;
+    letter-spacing: 1px;
+    margin-left: 80px;
+}
+
+.hero-text p {
+    font-size: 1.8rem;
+    margin-top: 1rem;
+    margin-left: 101px;
+}
+
+/* Scroll Sections */
+.scroll-section {
+    padding: 8rem 2rem;
+    background-color:goldenrod;
+}
+
+.product-scroll-section {
+    padding: 8rem 2rem;
+    background-color:goldenrod;
+}
+
+.scroll-section:nth-child(even) {
+    background-color: goldenrod;
+}
+
+/* Scroll Animation Classes */
+.scroll-fade, .scroll-left, .scroll-right {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+
+.scroll-left {
+    transform: translateX(-20px);
+}
+
+.scroll-right {
+    transform: translateX(20px);
+}
+
+.scroll-active.scroll-fade {
+    transition-delay: 400ms;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.scroll-active.scroll-left {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.scroll-active.scroll-right {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 500%;
+    height: 500%;
+    z-index: -1; /* Place behind other elements */
+    overflow: hidden;
+}
+
+#video-bg {
+    width: 100vw;  /* Full width */
+    height: 100vh; /* Full height */
+    object-fit: cover; /* Cover the entire background */
+}
+
+.scroll-section {
+    position: relative;  /* Ensure it stays on top of the video */
+    padding: 8rem 2rem;
+    color: #fff;  /* Set text color to stand out */
+    background: rgba(0, 0, 0, 0.3);  /* Optional: Add a dark overlay */
+    margin-top: 60vh; /* Push down to reveal the video */
+}
+
+/* Limousine Section */
+.scroll-section:nth-child(even) {
+    background: rgba(0, 0, 0, 0.3); /* Light overlay for contrast */
+}
+
+/* Content within sections */
+.content {
+    text-align: center;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .scroll-section {
+        padding: 6rem 1rem;
+    }
+}
+/* Social Media Box Styles */
+/* Business Info Section Styles */
+.business-info-section {
+  padding: 100px 0px;
+  background-color:rgba(0,0,0,0.7);
+  color: #f8f8f8;
+  text-align: center;
+  margin-bottom: -64px;
+}
+
+/* Align the boxes horizontally */
+.info-container {
+  display: flex;
+  justify-content: space-around; /* Even spacing between the boxes */
+  align-items: flex-start; /* Align items to the top */
+  flex-wrap: nowrap; /* Prevent wrapping */
+  gap: 30px; /* Add space between the boxes */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Styles for Each Info Box */
+.info-box {
+  flex: 1; /* Make all boxes take equal space */
+  min-width: 250px; /* Minimum width to prevent shrinking */
+}
+
+.info-box h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #f4c242; /* Accent color for headings */
+}
+
+.info-box p,
+.info-box ul {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.info-box ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.info-box a {
+  color: #f4c242; /* Accent color for links */
+  text-decoration: none;
+}
+
+.info-box a:hover {
+  text-decoration: underline;
+}
+
+/* Social Media Styles */
+.social-media-box {
+  margin-top: 40px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px; /* Spacing between icons */
+  margin-top: 10px;
+}
+
+.social-icons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+  color: #f8f8f8;
+  border: 1px solid #f8f8f8;
+  border-radius: 50%;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #111;
+  background-color: #f4c242; /* Hover background color */
+  border-color: #f4c242; /* Hover border color */
+}
+
+
+
+
+/* Footer */
+footer {
+    background-color:rgba(0, 0, 0, 0.7);
+    color: #fff;
+    text-align:center;
+    padding: 2rem;
+    margin-top: 4rem;
+    display: flex;           
+    justify-content: center; 
+    align-items: center;     
+}
+
+@media (max-width: 1024px) {
+  .info-container {
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    justify-content: center; /* Center items */
+  }
+
+  .info-box {
+    width: calc(50% - 20px); /* 2 items per row */
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .info-box {
+    width: 100%; /* 1 item per row on mobile */
+    margin-bottom: 20px;
+  }
+}

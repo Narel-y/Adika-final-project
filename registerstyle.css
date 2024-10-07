@@ -1,0 +1,150 @@
+/* Registration Container Styling */
+
+
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 130vh;
+    width: 100%;
+    background: linear-gradient(135deg, rgba(255, 122, 89, 0.4), rgba(51, 22, 180, 0.4)), url('images/luxury-background.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+/* Registration Card Styling */
+.register-card {
+    background: rgb(0,0,0,0.2); /* Semi-transparent background */
+    padding: 3rem 4rem;
+    border-radius: 130px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 500px;
+    width: 300%;
+    position: relative;
+}
+
+/* Title Styling */
+.register-title {
+    font-size: 2.5rem;
+    color: chocolate;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.register-subtitle {
+    font-size: 1rem;
+    color: coral;
+    margin-bottom: 2rem;
+}
+
+/* Input Group Styling */
+.input-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+/* Label Styling */
+.input-label {
+    display: block;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+/* Input Field Styling */
+.input-field {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    transition: border 0.3s ease-in-out;
+}
+
+/* Input Field Focus */
+.input-field:focus {
+    border-color: #ff7a59;
+    box-shadow: 0 4px 8px rgba(255, 122, 89, 0.1);
+}
+
+/* Register Button Styling */
+.register-btn {
+    background-color: #ff7a59;
+    color: #fff;
+    padding: 1rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    margin-top: 1rem;
+}
+
+.register-btn:hover {
+    background-color: #e64a19; /* Darker orange on hover */
+    transform: translateY(-3px); /* Slight lift on hover */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .register-card {
+        padding: 2rem;
+    }
+
+    .register-title {
+        font-size: 2rem;
+    }
+
+    .register-btn {
+        padding: 0.8rem 1.2rem;
+    }
+}
+
+form {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+     margin: 0 auto;
+    padding: 20px;
+     border-radius: 10px;
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  button {
+    background: #333;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: #555;
+  }
+
+ 
+
+/* Styling for "How did you hear about us?" */
+.checkbox-group {
+    margin: 2rem 0; /* Add spacing around the checkbox group */
+}
+
+.checkbox-group label {
+    color: #ff7a59; /* Set the color for the checkbox labels */
+    font-weight: bold; /* Make the label text bold */
+} 
+
+  footer {
+    background-color:rgba(0, 0, 0, 0.3);
+    color: #fff;
+    text-align:center;
+    padding: 0rem;
+    margin-top: 8rem;
+    display: flex;           
+    justify-content: center; 
+    align-items: center;     
+}
