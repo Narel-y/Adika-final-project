@@ -270,13 +270,13 @@ img{
     flex-wrap: nowrap; /* Prevent wrapping to the next line */
     overflow-x: scroll; /* Enable horizontal scrolling */
     scroll-snap-type: x mandatory; /* Snap to each item */
-    height: 70vh; /* Adjust the height as needed */
+    height: 50vh; /* Adjust the height as needed */
     margin-left: 10%; /* Center the gallery */
 }
 
 .scroll-item {
     flex: 0 0 auto; /* Prevent shrinking or growing */
-    width: 30%; /* Set width of each item */
+    width: 20%; /* Set width of each item */
     margin-right: 2rem; /* Spacing between items */
     scroll-snap-align: start; /* Snap effect */
     position: relative;
@@ -382,12 +382,12 @@ img{
 /* Responsive Adjustments */
 @media (max-width: 768px) {
     .gallery-item {
-        width: 70vw; /* Larger width on smaller screens */
+        width: 50vw; /* Larger width on smaller screens */
         height: 50vh; /* Reduce height */
     }
 
     .scroll-wrapper {
-        height: 70vh;
+        height: 5%;
     }
 }
 
