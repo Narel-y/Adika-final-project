@@ -229,7 +229,7 @@
   const scrollContainer = document.querySelector('.scroll-container');
   
   let scrollAmount = 0;
-  let scrollSpeed = 5; // Speed of the auto-scroll
+  let scrollSpeed = 1; // Speed of the auto-scroll
 
   function autoScroll() {
     if (scrollAmount <= scrollContainer.scrollWidth - scrollContainer.clientWidth) {
@@ -243,8 +243,8 @@
     }
   }
 
-  // Start the auto-scroll every 50 milliseconds
-  setInterval(autoScroll, 50);
+  // Start the auto-scroll every 70 milliseconds
+  setInterval(autoScroll, 70);
 });
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -253,7 +253,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const pauseButton = document.getElementById('pause-btn');
   
   let scrollAmount = 0;
-  let scrollSpeed = 2;  // Speed of the auto-scroll
+  let scrollSpeed = 1;  // Speed of the auto-scroll
   let scrollInterval;
 
   // Function to auto-scroll the gallery

@@ -98,6 +98,7 @@ body {
 img{
     width: 100%;
     height: auto;
+   overflow: auto;
     }
 
 /* Container for Centering Content */
