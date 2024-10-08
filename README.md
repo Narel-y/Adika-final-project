@@ -88,7 +88,7 @@ The design is inspired by Apple’s minimalist and elegant approach. The focus i
 
 Feel free to contribute to this project by opening issues or submitting pull requests. Contributions are always welcome!
 
-📝 License
-This project is licensed under the MIT License.
-
-
+👨‍💻 Author
+Name: Narel.y
+Email: nareoffical@gmail.com
+Front End Developer| Year up united
