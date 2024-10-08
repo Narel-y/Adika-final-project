@@ -87,7 +87,7 @@ And many more...
 
 |-- HTML5
 
-|-- CSS3
+|-- CSS      
 
 |--JavaScript
 
