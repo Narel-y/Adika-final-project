@@ -10,24 +10,56 @@ The Adika Car Rentals website consists of multiple sections, each designed to of
 
 Home Page:
 
-Horizontal Gallery Scroll: A visually engaging gallery showcasing featured cars, similar to Apple’s style.
+![Home Page Screenshot](img/homepage.png)
 
-Car Listings Section: Horizontally displayed cars with a single Reserve Now button that navigates to the Vehicles Page.
+Horizontal Gallery Scroll: 
 
-Service Section: A comprehensive list of 11 different services offered by Adika, including rentals and chauffeur services.
-Business Information: Contact details, business days, and social media icons.
+A visually engaging gallery showcasing featured cars, similar to Apple’s style.
+
+![Gallary Screenshot](img/gallary.png)
+
+Car Listings Section: 
+
+Horizontally displayed cars with a single Reserve Now button that navigates to the Vehicles Page.
+
+![Car Screenshot](img/carlist.png)
+
+Service Section:
+
+ A comprehensive list of 11 different services offered by Adika, including rentals and chauffeur services.
+
+ ![Service Screenshot](img/services.png)
+
+
+Business Information: 
+
+Contact details, business days, and social media icons.
+
+![Contact info](img/contactinfo.png)
 
 Vehicles Page:
 
-Luxury Limousines, SUVs, and Electric Cars: Each section is designed with a horizontal scroll, featuring stunning visuals and detailed information.
+Luxury Limousines, SUVs, and Sedans: Each section is designed with a horizontal scroll, featuring stunning visuals.
 
-Interactive Showcase: Custom containers with a glowing effect around each vehicle image and a Book Now button for easy navigation.
-Horizontal Scroll: Smooth, responsive scrolling between different car categories.
+Interactive Showcase:
+
+ Custom containers with a glowing effect around each vehicle image and a Book Now button for easy navigation.
+
+![Vehicle page](img/vehiclepage.png)
 
 Reservation and Checkout Pages:
 
-Reservation Page: A sleek form for users to reserve their desired vehicle, complete with real-time updates.
-Checkout Page: Using Bootstrap for a realistic, polished design. Includes detailed car rental information and a secure payment form.
+Reservation Page: 
+
+A sleek form for users to reserve their desired vehicle.
+
+![Resevation page](img/reserve.png)
+
+Checkout Page: 
+
+Using Bootstrap for a realistic, polished design. Includes detailed car rental information and a secure payment form.
+
+![Checkout page](img/checkout.png)
 
 💼 Adika's Services
 
