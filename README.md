@@ -156,6 +156,6 @@ Feel free to contribute to this project by opening issues or submitting pull req
 
 Name: Narel.y
 
-Email: nareoffical@gmail.com
+Email: nareloffical@gmail.com
 
 Front End Developer| Year up united
